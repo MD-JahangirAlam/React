@@ -1,0 +1,326 @@
+/* for register components and inside other */
+.login-box,
+.register-box{
+    width: 100%;
+    height: calc(100vh - 58.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #a311f7, #265ae7);
+    .register-body{
+        flex: 0 1 300px;
+        margin: -50px 0 0 0;
+        padding: 20px 20px 0px 20px;
+        background-color: #fff;
+        box-shadow: 3px 3px 5px rgba(0,0,0,.4);
+        border-radius: 10px;
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+            color: #265ae7;
+        }
+        form{
+            padding: 20px 0;
+            .form-grup{
+                margin: 0 0 10px 0;
+                label{
+                    display: block;
+                    // text-transform: uppercase;
+                    letter-spacing: .5px;
+                    font-size: 11px;
+                    color: #4347536a;
+                    // padding: 0 0 5px 0;
+                }
+                input{
+                    width: 100%;
+                    border: 1px solid #40387067;
+                    padding: 8px 5px;
+                    border-radius: 5px;
+                    color: #40387067;
+                    &:focus{
+                        outline: none;
+                        border-color: #265ae7;
+                    }   
+                }
+            }
+
+            .form-footer{
+                p{
+                    font-size: small;
+                    color: #2904fb90;
+                }
+                button{
+                    width: 100%;
+                    padding: 10px 0;
+                    text-transform: capitalize;
+                    color: #fff;
+                    background-color: #265ae7;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    i{
+                        margin: 0 0 0 3px;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+//   for showcase box and insede other
+.showcase-box{
+    width: 100%;
+    height: calc(100vh - 58.8px);
+    background: url('./img-1.jpg') rgba(0,0,0,.2);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .showcase-body{
+        flex: 0 1 500px;
+        padding: 20px;
+        background-color: rgba(255,255,255, .4);
+        backdrop-filter: blur(5px);
+        text-align: center;
+        box-shadow: 3px 3px 10px rgba(0,0,0,.4);
+        border-radius: 7px;
+        h1{
+            text-transform: capitalize;
+            color: #444;
+        }
+        button{
+            all: unset;
+            padding: 6px 30px;
+            border: 1px solid #265ae7;
+            border-radius: 30px;
+            text-transform: capitalize;
+            margin: 10px 0 0 0;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                background-color: #265ae7;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// for about page and user table and inside other's
+
+
+.about-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-header{
+        margin: -100px 0 0 0;
+        padding: 50px;
+        background-color: #eee;
+        flex: 0 1 800px;
+        h1{
+            text-transform: capitalize;
+            margin: 0 0 30px 0;
+        }
+        .user-table{
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+                
+                th{
+                    text-transform: capitalize;
+                    background-color: #444;
+                    color: #fff;
+                    outline: none;
+                    padding: 10px 5px;
+                    text-align: center;
+                    &:nth-of-type(4){
+                        width: 150px;
+                        padding: 10px 40px 10px 0;
+                        text-align: right;
+
+                    }
+                }
+            }
+            tr{
+                &:nth-child(even){
+                    background-color: #fff;
+                }
+                td{
+                    padding: 10px 5px;
+                    text-align: center;
+                    &:nth-of-type(4){
+                        
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: none;
+                    }
+                    
+                    button{
+                        border: none;
+                        padding: 5px 8px;
+                        border-radius: 5px;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        &:nth-of-type(1){
+                            
+                            background-color: #265ae7;
+                            color: #fff;
+                            margin: 0 2px 0 0;
+                        }
+                        &:nth-of-type(2){
+                            background-color: red;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+  
+
+// for product element and inside other::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.product-content{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    padding: 20px;
+    .product-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-transform: capitalize;
+            color: #265ae7;
+            padding: 50px 0;
+        }
+    }
+    .product-showcase{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        grid-gap: 40px;
+        justify-content: center;
+        align-items: center;
+        .product-items{
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,.2);
+            padding: 10px;
+
+            img{
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+            }
+            button{
+                border: 1px solid #265ae7;
+                outline: none;
+                text-transform: capitalize;
+                color: #fff;
+                background-color: #265ae7;
+                padding: 6px 25px;
+                margin: 8px 0 0 0;
+                cursor: pointer;
+                &:hover{
+                    background-color: #fff;
+                    color: #265ae7;
+                }
+            }
+        }
+    }
+}
+
+
+// for cart content in user and inside other ::::::::::::::::::::::::::::::::::::::::::
+
+.cart-content{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    padding: 50px 20px 20px;
+    background-color: #265ae7;
+    >h1{
+        text-transform: capitalize;
+        color: #ffff;
+        padding: 0 0 10px 0;
+        border-bottom: 2px solid rgba(0,0,0,.2);
+    }
+    .cart-body{
+        width: 100%;
+        max-width: 900px;
+        background-color: #fff;
+        height: 100%;
+        padding: 30px;
+        h1{
+            padding: 50px 0;
+        }
+        .cart-body-items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(0,0,0,.2);
+            height: auto;
+            padding: 10px;
+            position: relative;
+            margin: 0 0 15px 0;
+            
+            .cart-product-items{
+                .cart-product-img{
+                    float: left;
+                    margin: 0 10px 0 0;
+                    img{
+                        width: 120px;
+                        height: 100px;
+                        object-fit: contain;
+                    }
+                }
+                .product-title{
+                    float: right;
+                    margin: 20px 0 0 0;
+                    color: #474747;
+                    h5{
+                        margin: 7px 0 0 0;
+                    }
+                }
+            }
+            .cart-user{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                i{
+                    color: #265ae7;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+            .delete-btn{
+                width: 20px;
+                text-align: center;
+                line-height: 20px;
+                height: 20px;
+                border-radius: 100%;
+                color: #474747;
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                border: 1px solid rgba(0,0,0,.2);
+                cursor: pointer;
+                &:hover{
+                    background-color: red;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
